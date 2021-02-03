@@ -1,0 +1,140 @@
+:GRAPH Global_GDP
+:TITLE Growss World Product
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Global GDP|Baseline
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Global GDP|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Global_GDP_perCapita
+:TITLE GDP per Capita
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Global GDP per capita|Baseline
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Global GDP per capita|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Regional_GDP_perCapita
+:TITLE GDP per Capita by Region
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Semi Agg GDP per capita[US 6R]|US
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Semi Agg GDP per capita[EU 6R]|EU
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Semi Agg GDP per capita[China 6R]|China
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Semi Agg GDP per capita[India 6R]|India
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Semi Agg GDP per capita[Other Developed 6R]|Other Developed
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Semi Agg GDP per capita[Other Developing 6R]|Other Developing
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Temperature
+:TITLE Temperature Change
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Temperature change from 19th century|Baseline
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Temperature change from 19th century|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Damage_function
+:TITLE Reduction in GDP vs Temperature
+:X-AXIS Temperature change from 19th century
+:X-DIV 8
+:X-MIN 0
+:X-MAX 4
+:SCALE
+:VAR Nordhaus|Nordhaus
+:Y-MIN 0
+:DATASET data/DamageLiterature.vdfx
+:LINE-WIDTH 2
+:VAR Damage|Current
+:Y-MIN 0
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+:VAR Weitzman|Weitzman
+:Y-MIN 0
+:DATASET data/DamageLiterature
+:LINE-WIDTH 2
+:VAR "Dietz&Stern"|Dietz&Stern
+:Y-MIN 0
+:DATASET data/DamageLiterature
+:LINE-WIDTH 2
+:VAR Burke|Burke et al
+:Y-MIN 0
+:DATASET data/DamageLiterature
+:LINE-WIDTH 2
+
+:GRAPH Social_Cost_of_Carbon
+:TITLE Social Cost of Carbon
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Social Cost of Carbon 2010$|Baseline
+:Y-MIN 0
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Social Cost of Carbon 2010$|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Emissions
+:TITLE Global CO2 Emissions
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Annual CO2 emissions|Baseline
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Annual CO2 emissions|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
+
+:GRAPH Damage_overtime
+:TITLE Reduction in GDP from climate impacts
+:X-AXIS Time
+:X-DIV 5
+:X-MIN 2000
+:X-MAX 2100
+:SCALE
+:VAR Damage|Baseline
+:Y-MIN 0
+:Y-MAX 100
+:DATASET Baseline.vdfx
+:LINE-WIDTH 2
+:VAR Damage|Current
+:DATASET Current.vdfx
+:LINE-WIDTH 2
